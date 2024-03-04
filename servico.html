@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livro Caixa</title>
+    <style>
+        body{
+            background-image: url(escritorio.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size:100% ;
+        }
+        div{
+            text-align: center;
+            justify-content: center;
+            width: 40%;
+            margin: 70px 30%;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        span img{
+            width: 80%;
+        }
+        form{
+            padding: 15px;
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+        }
+        footer a{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span> <img src="logo.png"></span>
+        <form action="cone.php" method="post">
+            <input type="radio" name="movimento" id="movimento" value="entrada"><span style="color:rgb(0, 73, 6);"> Entrada  </span>
+            <input type="radio" name="movimento" id="movimento" value="despesa"> <span style="color:rgb(248, 0, 0); "> Despesa</span>
+            <br><br>
+            <label for="dia">Data: </label>
+            <input type="date" name="dia" id="dia">
+            <br><br>
+            <label for="categoria">Categoria: </label>
+            <input type="text" name="categoria" id="categoria">
+            <br><br>
+            <label for="descricao">Descrição: </label>
+            <input type="text" name="descricao" id="descriacao">
+            <br><br>
+            <label for="valor">Valor: </label>
+            <input type="text" name="valor" id="valor">
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <footer><a href="inndex.html">Página Inicial</a></footer>
+    <br>
+    <footer><a href="salvos.php">Dados Salvos</a></footer>
+    <br>
+    <footer><a href="dados.php">Valor de Caixa</a></footer>
+    
+</body>
+</html>
